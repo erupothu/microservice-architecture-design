@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vaya-reports-deployment
+  labels:
+    app: vayareports
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vayareports
+  template:
+    metadata:
+      labels:
+        app: vayareports
+    spec:
+      containers:
+      - name: vayareports
+        image: 470702883802.dkr.ecr.ap-south-1.amazonaws.com/reports-test
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8083
+      imagePullSecrets:
+          - name: aws-ecr
