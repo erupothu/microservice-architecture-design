@@ -1,0 +1,18 @@
+spring:
+   application:
+      name: admin-dashboard
+   boot:
+      admin:
+         ui:
+            title: Customized Title
+            brand: Customized Brand
+
+server:
+   port: 9090
+   
+# Eureka
+eureka:
+   client:
+      serverUrl:
+         defaultZone: http://localhost:8761
+   
