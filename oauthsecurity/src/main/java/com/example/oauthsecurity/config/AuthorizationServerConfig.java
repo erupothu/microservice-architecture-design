@@ -1,0 +1,101 @@
+package com.example.oauthsecurity.config;
+
+import javax.sql.DataSource;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
+import org.springframework.security.oauth2.common.OAuth2AccessToken;
+import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurer;
+import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
+import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
+
+@Configuration
+public class AuthorizationServerConfig extends WebSecurityConfigurerAdapter implements AuthorizationServerConfigurer {
+	
+	private static final Logger LOG = LoggerFactory.getLogger(AuthorizationServerConfig.class);
+	
+	@Autowired
+    private UserDetailsService userDetailsService;
+	
+	@Autowired
+    private DataSource dataSource;
+	
+	@Bean
+    PasswordEncoder passwordEncoder() {
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    }
+	
+	@Autowired
+    private PasswordEncoder passwordEncoder;
+	
+    @Bean
+    protected AuthenticationManager getAuthenticationManager() throws Exception {
+        return super.authenticationManagerBean();
+    }
+    
+    @Autowired
+    private AuthenticationManager authenticationManager;
+    
+    public OAuth2AccessToken readAccessToken(String tokenValue) {
+        OAuth2AccessToken accessToken = null;
+
+        try {
+            accessToken = new DefaultOAuth2AccessToken(tokenValue);
+        }
+        catch (EmptyResultDataAccessException e) {
+            if (LOG.isInfoEnabled()) {
+                LOG.info("Failed to find access token for token "+tokenValue);
+            }
+        }
+        catch (IllegalArgumentException e) {
+            LOG.warn("Failed to deserialize access token for " +tokenValue,e);
+        }
+
+        return accessToken;
+    }
+
+	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
+		security.checkTokenAccess("isAuthenticated()").tokenKeyAccess("permitAll()");
+	}
+	
+	public void configure(ClientDetailsServiceConfigurer client) throws Exception {
+        client.inMemory().withClient("mobile").secret(passwordEncoder.encode("pin"))
+        .redirectUris("http://localhost:8084/login","http://localhost:8001/login", "http://localhost:8761/login", "http://localhost:7000/login", "http://localhost:9411/login")
+        .scopes("READ", "WRITE").authorizedGrantTypes("password", "authorization_code").autoApprove(true);
+    }
+
+	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+//		endpoints.tokenStore(readAccessToken());
+        endpoints.authenticationManager(authenticationManager);
+        endpoints.approvalStoreDisabled();
+	}
+	
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+    }
+    
+    public void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable()
+        	.formLogin().permitAll().and()
+            .authorizeRequests().antMatchers("/api/library/welcome", "/api/library/testing", "/login", "/oauth/authorize").permitAll().and()
+//            .authorizeRequests().antMatchers("/h2-console/**").hasRole("admin").and()
+            .authorizeRequests().antMatchers("/swagger-ui.html/**").hasRole("admin").and()
+            .authorizeRequests().antMatchers("/actuator/metrics/**").hasRole("admin")
+            .anyRequest().authenticated();
+        http.headers().frameOptions().disable();
+      }
+
+}
