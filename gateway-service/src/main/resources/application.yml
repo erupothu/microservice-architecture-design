@@ -1,0 +1,89 @@
+server:
+  port: 8001
+  
+logging:
+  pattern: 
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+    
+openapi: "3.0.0"
+
+info:
+  title: API
+  description: API Documentation
+  version: '1.0'
+
+springdoc:
+  packagesToScan: pl.piomin.services.department
+  swagger-ui.path: /swagger-ui.html
+  
+# Eureka
+eureka:
+   client:
+      serverUrl:
+         defaultZone: http://localhost:8761/eureka
+      enabled: true
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: gateway-service
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: openapi
+        uri: http://localhost:${server.port}
+        predicates:
+        - Path=/v3/api-docs/**
+        filters:
+        - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
+      - id: student-service
+        uri: lb://student-service
+        predicates:
+        - Path=/student-service/**
+        filters:
+        - name: Hystrix
+          args:
+            name: fallbackCommand
+            fallbackUri: forward:/fallback/student-service
+      - id: libraryModule
+        uri: lb://SECOND-SERVICE
+        predicates:
+        - Path=/library/**
+        filters:
+        - name: Hystrix
+          args:
+            name: fallbackCommand
+            fallbackUri: forward:/fallback/library-service
+  
+#spring:
+#   application:
+#      name: gateway-service
+#   cloud:
+#      gateway:
+#         rotues:
+#         - id: studentModule
+#           uri: lb://STUDENT-SERVICE
+#           predicates:
+#           - Path=/student/api/**
+#           filters:
+#           - name: Hystrix
+#             args:
+#                name: fallbackCommand
+#                fallbackUri: forward:/fallback/message
+#         - id: libraryModule
+#           uri: lb://LIBRARY-SERVICE
+#           predicates:
+#           - Path=/library/api/**
+#           filters:
+#           - name: Hystrix
+#             args:
+#                name: fallbackCommand
+#                fallbackUri: forward:/fallback/message
+
