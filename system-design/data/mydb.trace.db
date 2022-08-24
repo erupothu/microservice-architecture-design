@@ -1,0 +1,18 @@
+2022-06-20 19:45:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DESC[*] URL"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+desc url [42001-200]
+2022-06-20 19:45:26 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DESCRIBE[*] URL"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+describe url [42001-200]
+2022-06-20 19:45:35 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DESCRIBE[*] URL"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+describe url [42001-200]
+2022-06-20 19:45:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DESC[*] URL"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+desc url [42001-200]
+2022-06-20 19:46:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DESCRIBE[*] URL"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+describe url [42001-200]
+2022-06-20 19:46:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DESCRIBE[*] URL"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+describe url [42001-200]
