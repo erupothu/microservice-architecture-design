@@ -1,0 +1,316 @@
+<mxfile host="Electron" modified="2023-09-20T19:24:26.132Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="SG8B-jE9PnD8PNULFd0t" version="21.7.5" type="device">
+  <diagram name="Page-1" id="n--huuTGcL42xjZy0tQR">
+    <mxGraphModel dx="1434" dy="1944" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6NjdzUwKmu3flBefcpP1-1" value="Hotel manager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-2" value="customers&lt;br&gt;search + booking" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-3" value="view Bookings&lt;br&gt;users + hotels" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-4" value="LB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="80" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-6" value="&lt;b&gt;Eureka / Consule / Kubernates Discovey service&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="810" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-7" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-13" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-14" value="search service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-15" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-16" value="Booking service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-17" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-18" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-19" value="Booking management service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-20" value="Booking service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-21" value="Booking service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-22" value="payment service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-23" value="search service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-24" value="search kafka Consumer service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-25" value="Hotel service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-26" value="Notification service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-27" value="Booking management service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-28" value="Archival Kafka consumer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-30" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-160" width="1090" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-31" value="Config server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-32" value="Config server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-33" value="swagger server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-34" value="swagger server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-35" value="sleuth and zipkins" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-36" value="sleuth and zipkins" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-37" value="elk stack" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-38" value="elk stack" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-39" value="elk stack" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-40" value="Admin Dashboard" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-41" value="Admin Dashboard" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-42" value="keycloak Authentication" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-43" value="keycloak Authentication" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-44" value="LDAP Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-45" value="Config server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-46" value="MySQL Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-47" value="MySQL Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-48" value="MongiDB Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-49" value="MongiDB Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-50" value="Elastic Search Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-51" value="Elastic Search Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-52" value="Redis Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-53" value="Redis Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-54" value="Kafka Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-55" value="Hadoop Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-56" value="Hadoop Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-57" value="Hadoop Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-58" value="Spark Streaming Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-59" value="MySQL Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-60" value="Cassandra Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-61" value="Cassandra Cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-62" value="vault server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-63" value="vault server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-64" value="Grafana Dashboard" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-65" value="Grafana Dashboard" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-66" value="Kubernates cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-67" value="Docker Container server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-68" value="Docker Container server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-69" value="Docker Container server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-70" value="SonarQube server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-71" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="-520" width="1080" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-73" value="JIRA Software" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-74" value="Confluence" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-75" value="GitHub" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-76" value="Docker Hub" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-77" value="NPM Repository" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-78" value="Maven Repository" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-79" value="AWS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-80" value="GCP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-81" value="Azure" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-82" value="VM Ware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-83" value="Redhat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-84" value="On Premises" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-85" value="Terraform" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-86" value="Ansible" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-87" value="Puppet" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-88" value="Jenkins" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-89" value="Jenkins server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-90" value="Terraform Registry" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-91" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="-720" width="1090" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-92" value="Gamil" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-93" value="Slack" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-94" value="Any Desk" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-95" value="Webex" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-96" value="Zoom" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-97" value="Teams" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-98" value="Skype" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-99" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-100" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-101" value="Hotel service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-102" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="1090" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-103" value="Java" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-104" value="Node" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-105" value="python" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-106" value="IntelliJ / Vs Code" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-107" value="Maven / Gradle" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-108" value="Angular / ReactJs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-109" value="Spring / Qurakus" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6NjdzUwKmu3flBefcpP1-110" value="Postman / Curl" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
